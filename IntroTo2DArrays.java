@@ -43,14 +43,16 @@ public class IntroTo2DArrays{
     //Add up the columns of each row using for each loops...
     
     int total = 0;
-    for(int row[]: ray)
-    {
-      total = 0;
-      for(int col[]: ray)
-      {
-        
-      }
 
+    for(int[] row: ray)
+    {
+      //total = 0;
+      for(int col: row)
+      {
+        total+=col;
+      }
+      
     }
+    System.out.println("The sum of the 2D-array is: " + total);
   }
 }
